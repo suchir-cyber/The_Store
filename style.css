@@ -117,12 +117,14 @@ nav{
 nav ul{
     display: inline-block;
     list-style-type: none;
+    z-index: 9999;
 }
 
 nav ul li{
     display: inline-block;
     margin-right: 20px;
 }
+
 nav ul li a{
     color: #504e70;
 }
@@ -175,4 +177,32 @@ p{
         display: block;
         cursor: pointer;
     }
+}
+
+/* location */
+.location-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(to right, #ff6b6b, #ffa07a); /* Set your gradient colors */
+    color: #fff; /* Set your text color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out;
+  }
+
+.location-button:hover {
+    background: linear-gradient(to right, #ff6347, #ff7f50); /* Set your hover gradient colors */
+  }
+
+ /* location */ 
+
+
+footer{
+    background-color: rgba(0, 0, 0, 0.17);
 }

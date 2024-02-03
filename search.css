@@ -1,0 +1,34 @@
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-input {
+    padding: 10px;
+    border: none;
+    border-radius: 25px 0 0 25px; /* Rounded corners on the left */
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+  }
+
+  .search-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 25px 25px 0; /* Rounded corners on the right */
+    background-color: #007bff; /* Set your button color */
+    color: #fff; /* Set your button text color */
+    cursor: pointer;
+  }
+
+  .search-container
+  {
+    height: 100px;
+  }
