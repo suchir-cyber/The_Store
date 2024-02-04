@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
 }
 
 a{
@@ -72,8 +73,10 @@ a{
 
 
 
-.header{
+.header .header-inner{
     background: radial-gradient(#fff , #1bab49);
+    border-radius: 10px;
+    height: 300px;
 }
 
 .menu{
@@ -137,15 +140,18 @@ p{
 }
 
 @media only screen and (max-width: 600px){
-   .row{
-    text-align: center;
-   }
-   .search-bar {
-    width: 100%; /* Make the search bar full width on smaller screens */
+    .row{
+        text-align: center;
+    }
+    .search-bar {
+        width: 100%; /* Make the search bar full width on smaller screens */
+    }
+  .header .header-inner{
+     height: 500px;
   }
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1200px){
     nav ul{
         position: absolute;
         top: 70px;
@@ -155,6 +161,12 @@ p{
         overflow: hidden;
         transition: max-height 0.5s;
     }
+    .search-container{
+        align-items: center;
+        display: block;
+        width: 100%;
+    }
+
     nav ul li{
         display: block;
         margin-right: 50px;
@@ -172,7 +184,7 @@ p{
 
 /* location */
 .location-button {
-    display: inline-block;
+    display: inline-flex;
     padding: 15px 30px;
     font-size: 16px;
     font-weight: bold;
@@ -186,6 +198,10 @@ p{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background 0.3s ease-in-out;
   }
+
+.location-button .icon{
+    margin-right: 5px;
+}
 
 .location-button:hover {
     background: linear-gradient(to right, #ff6347, #ff7f50);
