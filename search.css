@@ -8,6 +8,19 @@
   .search-bar {
     display: flex;
     align-items: center;
+    box-shadow: 10px 5px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    transition: box-shadow 0.3s;
+  }
+
+  .search-bar::placeholder {
+    color: #120f0f; /* Adjust placeholder color as needed */
+  }
+
+  .search-bar:focus {
+    outline: none; /* Remove the default focus outline */
+    border: 1px solid black; /* Change border color when focused */
+    box-shadow: 0 0 10px rgba(10, 11, 12, 0.5); /* Add a more pronounced box-shadow when focused */
   }
 
   .search-input {
@@ -16,7 +29,7 @@
     border-radius: 25px 0 0 25px; /* Rounded corners on the left */
     outline: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 250px;
+    width: 450px;
   }
 
   .search-button {
@@ -31,4 +44,5 @@
   .search-container
   {
     height: 100px;
+    justify-content: center;
   }

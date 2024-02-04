@@ -70,21 +70,7 @@ a{
      font-size: 14px;
 }
 
-.footer{
-    background: #000;
-    color: #8a8a8a;
-    font-size: 14px;
-    padding: 60px 0 20px;
-}
 
-.footer col-1,.footer col-2,.footer col-3{
-    min-width: 250px;
-    margin-bottom: 20px;
-}
-
-.footer img{
-    width: 150px;
-}
 
 .header{
     background: radial-gradient(#fff , #1bab49);
@@ -103,6 +89,8 @@ a{
 }
 
 nav ul li a:hover{
+   color: inherit;
+   text-decoration: none; 
    padding-bottom: 5px;
    border-bottom: 2px solid red;
    transition: all 0.3s ease;
@@ -152,6 +140,9 @@ p{
    .row{
     text-align: center;
    }
+   .search-bar {
+    width: 100%; /* Make the search bar full width on smaller screens */
+  }
 }
 
 @media only screen and (max-width: 800px){
@@ -197,11 +188,14 @@ p{
   }
 
 .location-button:hover {
-    background: linear-gradient(to right, #ff6347, #ff7f50); /* Set your hover gradient colors */
+    background: linear-gradient(to right, #ff6347, #ff7f50);
+    text-decoration: none; /* Set your hover gradient colors */
   }
 
  /* location */ 
 
+
+/* footer */
 
 footer{
     background-color: rgba(0, 0, 0, 0.17);
@@ -210,3 +204,5 @@ footer{
 .social-icons .me-4{
     margin-right: 20px;
 }
+
+/* footer */
