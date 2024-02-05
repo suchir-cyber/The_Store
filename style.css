@@ -10,6 +10,10 @@ a{
     color: black;
 }
 
+img{
+    margin-right: 20px;
+}
+
 .btn{
     font-size: 16px;
     font-weight: 500;
@@ -21,7 +25,7 @@ a{
     display: inline-block;
     white-space: nowrap;
     transition: all 0.3s ease;
-    border: none;
+    bottom: 10px;
 }
 
 .btn:hover{
@@ -32,6 +36,7 @@ a{
 .col-2{
     flex-basis: 50%;
     min-width: 300px;
+    margin: 20px;
  }
  
  .col-2 img{
@@ -73,7 +78,7 @@ a{
 
 
 
-.header .header-inner{
+.main-container .header-inner{
     background: radial-gradient(#fff , #1bab49);
     border-radius: 10px;
     height: 300px;
@@ -144,10 +149,10 @@ p{
         text-align: center;
     }
     .search-bar {
-        width: 100%; /* Make the search bar full width on smaller screens */
+        width: 100%;
     }
-  .header .header-inner{
-     height: 500px;
+  .small-container .header-inner{
+     height: 600px;
   }
 }
 
@@ -162,11 +167,18 @@ p{
         transition: max-height 0.5s;
     }
     .search-container{
-        align-items: center;
-        display: block;
+        top: 100px !important;
         width: 100%;
+        left: 50%;
+        position: absolute !important;
+        display: flex;
     }
-
+    .small-container{
+        top: 100px;
+    }
+    .search-bar{
+        left: 16%;
+    }
     nav ul li{
         display: block;
         margin-right: 50px;
@@ -179,6 +191,9 @@ p{
     .menu{
         display: block;
         cursor: pointer;
+    }
+    footer{
+        top: 100px;
     }
 }
 
@@ -210,9 +225,7 @@ p{
 
  /* location */ 
 
-
 /* footer */
-
 footer{
     background-color: rgba(0, 0, 0, 0.17);
 }
@@ -220,5 +233,27 @@ footer{
 .social-icons .me-4{
     margin-right: 20px;
 }
-
 /* footer */
+
+/* line */
+.divider {
+    position: relative;
+    margin: 20px 0;
+    height: 1px; /* Adjust the height of the line */
+    background-color: #ccc; /* Light color for the line */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 50px; /* Optional: Add a subtle shadow */
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    width: 20px;
+    height: 10px;
+    background-color: #fff; /* Same as the background color of your page */
+    border: 1px solid #ccc; /* Border color same as the line color */
+    transform: translateX(-50%);
+}
+/* line */
