@@ -1,0 +1,142 @@
+:root {
+    --font-family: "Open Sans", sans-serif;
+
+    --primary-hue: 261.3559322034deg;
+    --primary-saturation: 42.4460431655%;
+    --primary-lightness: 27.2549019608%;
+    
+    --prime-color: hsl(
+        var(--primary-hue),
+        var(--primary-saturation),
+        var(--primary-lightness)
+    );
+    --font-color: hsl(var(--primary-hue), var(--primary-saturation), 13%);
+    --light-font-color: hsl(var(--primary-hue), var(--primary-saturation), 90%);
+    --body-bg: hsl(var(--primary-hue), var(--primary-saturation), 97%);
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .signup-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 400px;
+  }
+
+  .signup-container h2 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+    overflow: hidden; /* Clear floats */
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .signup-container input {
+    padding: 15px 20px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid hsl(var(--primary-hue), var(--primary-saturation), 85%);
+    background: hsl(var(--primary-hue), var(--primary-saturation), 98.5%);
+}
+.signup-container input:hover,
+.signup-container input:focus {
+    border-color: hsl(var(--primary-hue), var(--primary-saturation), 50%);
+}
+.signup-container input:focus {
+    background-color: 
+   white;
+}
+.signup-container input::placeholder {
+    font-weight: bold;
+    color: 
+   gray;
+}
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"],
+  .form-group input[type="password"] {
+    width: calc(50% - 5px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    float: left; /* Float elements to the left */
+  }
+
+  .form-group input[type="text"] {
+    margin-right: 10px;
+  }
+
+  .form-group input[type="tel"],
+  .form-group input[type="password"]{
+    margin-left: 100px;
+  }
+
+  .form-group button {
+    margin-left: 150px;
+    margin-bottom: 10px;
+    display: inline-flex;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(to right, #ff6b6b, #ffa07a); /* Set your gradient colors */
+    color: #fff; /* Set your text color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out;
+  }
+
+  .form-group button:hover {
+    background-color: #45a049;
+  }
+
+  .line {
+    border-bottom: 2px solid #ccc;
+    margin: 20px 0;
+}
+
+.signup-container p{
+    text-align: center;
+    color: #393939;
+}
+
+.signup-container p a{
+    color: #201f1f;
+    font-weight: bold;
+}
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+    background-image: linear-gradient(to right, transparent , #e36c11,transparent);
+}
+
+
+.signup-container .create-new a{
+    margin-left: 5px;
+ }
+ 
