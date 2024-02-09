@@ -46,6 +46,8 @@
     top: 50px;
     font-size: 30px;
     text-transform: capitalize;
+    margin-bottom: 30px;
+    left: 50px;
 }
 
 .aside .logo a
@@ -75,7 +77,7 @@
 }
 
 .aside .nav{
-    max-height: 500px; /* Adjust as needed */
+  max-height: 400px; /* Adjust as needed */
   overflow-y: auto;
   padding: 0; /* Remove default padding */
   margin: 0;
@@ -193,42 +195,70 @@
 }
 
 /* contents */
-.section-title
-{
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 60px;
+.main-container{
+    padding-left: 250px;
+    margin-top: 30px;
 }
 
-.section-title h2
-{
-    font-size: 40px;
-    color: var(--text-black-900);
-    font-weight: 700;
-    position: relative;
+.main-container h2{
+    padding-left: 35%;
+    color: orangered;
 }
 
-.section-title h2::before
-{
-    content: '';
-    height: 4px;
-    width: 50px;
-    background-color: var(--skin-color);
-    position: absolute;
-    top: 100%;
-    left: 0;
+.main-content {
+    flex-grow: 1; /* Allow main content to grow and fill remaining space */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-.section-title h2::after
-{
-    content: '';
-    height: 4px;
-    width: 25px;
-    background-color: var(--skin-color);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    margin-top: 8px;
+.product {
+    width: 250px; /* Width of each product item */
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.product:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin-top: 10px;
+}
+
+.product p {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.price {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
 }
 
 /* body */
@@ -240,8 +270,22 @@
     /* justify-content: space-between;  */
 /* } */
 
+@media only screen and (max-width: 768px) {
+    .aside {
+        width: 30%;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav li {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
 
-.service .row
+
+/* .service .row
 {
     display: flex;
     flex-wrap: wrap;
@@ -255,12 +299,12 @@
     margin-bottom: 30px;
     max-width: 33.33%;
     flex: 0 0 calc(33.333% - 20px); /* Set the width of each item (adjust percentage as needed) */ 
-    background-color: #f0f0f0; /* Set background color as needed */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    padding: 15px;
-}
+    /* background-color: #f0f0f0; /* Set background color as needed */
+    /* box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    /* padding: 15px; */
+/* } */
 
-.service .service-item .service-item-inner
+/* .service .service-item .service-item-inner
 {
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
@@ -275,14 +319,6 @@
     box-shadow: 0 0 20px rgba(48 ,46, 77, 0.15);
 }
 
-
-
-/* .service .service-item .service-item-inner p
-{
-    font-size: 16px;
-    color: var(--text-black-700);
-    line-height: 25px;
-} */
-/* body */
-
-/* contents */
+.service .service-item .service-item-inner img{
+    width: 200px;
+}  */

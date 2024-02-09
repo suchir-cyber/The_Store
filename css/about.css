@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root
+{
+   --bg-black-900: #f2f2fc;
+   --bg-black-100: #fdf9ff;
+   --bg-black-50:   #e8dfec;
+   --text-black-900: #302e4d;
+   --text-black-700: #504e70;
+}
+
+body
+{
+   line-height : 1.5;
+   font-size : 16px;
+   font-family: 'Poppins' sans-serif;
+}
+
+.about-section{
+    margin-top: 50px;
+}
+
+.about-section p{
+    color: var(--text-black-700);
+    font-weight: bold;
+}
+
+.about-section a{
+    color: #201f1f;
+    font-weight: bold;
+}
+
+.about-section .timeline-box
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    
+}
+
+.about-section .timeline
+{
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.about-section .timeline .timeline-item
+{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+
+.about-section .timeline .timeline-item:last-child
+{
+    padding-bottom: 0;
+}
+
+.about-section .timeline .timeline-item::before
+{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: orange;
+}
+
+.about-section .timeline .circle-dot
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+.about-section.timeline .timeline-title
+{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+}
+
+.about-section .timeline .timeline-text
+{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--text-black-700);
+}
+
+/* core team */
+
+.core-box-head
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+
+.core-box-head h2
+{
+    font-size: 40px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+}
+
+.core-box-head h2::before
+{
+    content: '';
+    height: 4px;
+    width: 100px;
+    background-color: orangered;
+    position: absolute;
+    top: 100%;
+    left: 54%;
+}
+
+.core-box-head h2::after
+{
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: orangered;
+    position: absolute;
+    top: 100%;
+    left: 59%;
+    margin-top: 8px;
+}
+
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+
+.core-box{
+    margin-top: 50px;
+    padding: 20px;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.core-box-head h2{
+    margin: 50px 0px;
+    text-align: center;
+    color: red;
+}
+
+/* .core-box-head p{
+    color: var(--text-black-900);
+} */
+
+.divider {
+    position: relative;
+    margin: 20px 0;
+    height: 1px; /* Adjust the height of the line */
+    background-color: #ccc; /* Light color for the line */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 50px; /* Optional: Add a subtle shadow */
+}
+
+.core-box{
+    margin-bottom: 30px;
+}
+.core-box-item{ 
+    padding: 50px !important;
+    margin: 20px 0px !important;
+}
+
+.core-box-item:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.core-box-item h3,h5{
+    color: orangered;
+}
+
+.core-box-item img{
+   height: 150px;
+   width: 150px;
+   margin-left: 100px;
+   margin-top: 40px;
+   border-radius: 50%;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.core-box-item p{
+    color: var(--text-black-700);
+ }
+
+ .core-box-item .bottom-line{
+    border-bottom: 2px solid #000;
+    width: 100px; 
+ }
+
+.core-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-member {
+    margin: 20px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.member-info {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.member-info h2 {
+    margin: 5px 0;
+}
+
+.member-info p {
+    margin: 3px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+
+/* core team */

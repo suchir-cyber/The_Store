@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root
+{
+   --bg-black-900: #f2f2fc;
+   --bg-black-100: #fdf9ff;
+   --bg-black-50:   #e8dfec;
+   --text-black-900: #302e4d;
+   --text-black-700: #504e70;
+}
+
+.main-container{
+  padding-left: 370px;
+}
+
+.aside{
+    width: 270px;
+    background: var(--bg-black-100);
+    position: fixed;
+    left : 0;
+    top : 0;
+    display: flex;
+    border-right: 1px solid var(--bg-black-50);
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    height: 100%;
+    z-index: 10;
+}
+.aside li img{
+    height: 40px;
+    margin-right: 5px;
+}
+.aside li{
+    display: inline-flex;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.aside .logo
+{
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    left: 50px;
+}
+
+.aside .logo a
+{
+    color: var(--text-black-900);
+    font-weight: 700;
+    padding: 15px 20px;
+    font-size:  30px;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.aside .nav-toggler
+{
+    height: 40px;
+    width: 45px;
+    border: 1px solid var(--bg-black-50);
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    border-radius: 5px;
+    background: var(--bg-black-100);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside .nav{
+  max-height: 400px; /* Adjust as needed */
+  overflow-y: auto;
+  padding: 0; /* Remove default padding */
+  margin: 0;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0);
+}
+
+.nav::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+  }
+  
+  .nav::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0); /* Make the track transparent */
+  }
+  
+  .nav::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Set the color of the scrollbar thumb */
+    border-radius: 4px; /* Round the corners of the thumb */
+  }
+  
+  .nav::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.4); /* Change thumb color on hover */
+  }
+
+.aside .nav-toggler span
+{
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    display: inline-block;
+    position: relative;
+}
+
+.aside .nav-toggler span::before
+{
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+
+.aside .nav-toggler span::after
+{
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: red;
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+.aside .logo a span
+{
+   font-family: 'Clicker Script' , cursive;
+   font-size: 40px;
+}
+
+.aside .logo a::before
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid red;
+    border-left: 5px solid red;
+    bottom: 0;
+    left: 0;
+}
+
+.aside .logo a::after
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid red;
+    border-right: 5px solid red;
+    top : 0;
+    right : 0;
+}
+
+.aside .nav
+{
+    margin-top: 50px;
+}
+
+.aside .nav li
+{
+    margin-bottom: 20px;
+    display: block;
+}
+
+.aside .nav li a
+{
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--bg-black-50);
+    display: block;
+    color: var(--text-black-900);
+    padding: 5px 15px;
+}
+
+.aside .nav li a.active
+{
+    color: red;
+}
+
+.aside .nav li a i
+{
+    margin-right: 15px;
+}
+
+/* contents */
+.main-container{
+    padding-left: 250px;
+    margin-top: 30px;
+}
+
+.main-container h2{
+    padding-left: 35%;
+    color: orangered;
+}
+
+.main-content {
+    flex-grow: 1; /* Allow main content to grow and fill remaining space */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product {
+    width: 250px; /* Width of each product item */
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.product:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin-top: 10px;
+}
+
+.product p {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.price {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* body */
+/*
+{
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row if necessary */
+    /* justify-content: space-between;  */
+/* } */
+
+@media only screen and (max-width: 768px) {
+    .aside {
+        width: 30%;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav li {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
